@@ -21,19 +21,19 @@ export class NavbarComponent implements OnInit{
       name: 'Categorias',
       subItems:[
         {
-          path:'/',
+          path:'/Accion',
           name: 'Acción'
         },
         {
-          path:'/',
+          path:'/Aventura',
           name: 'Aventura'
         },
         {
-          path:'/',
+          path:'/Carreras',
           name: 'Carreras'
         },
         {
-          path:'/',
+          path:'/Shooters',
           name: 'Shooters'
         }
       ]
