@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-lg">
+  <div class = "container-fluid">
+    <a class="navbar-brand" href="#">
+        <img src ="/assets/Pictures/InfoGames.png" alt ="logo" id ="logo">
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li *ngFor=" let item of navItems"  class="nav-item">
+          <a class="nav-link" [routerLink]="item.path">{{item.name}}</a>
+          <ul *ngIf="item.subItems">
+            <li *ngFor=" let item of item.subItems">
+              <a class ="nav-link" [routerLink]="item.path">{{item.name}}</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
