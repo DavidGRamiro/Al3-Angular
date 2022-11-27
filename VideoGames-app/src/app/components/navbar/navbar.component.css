@@ -1,0 +1,56 @@
+nav {
+    background: rgb(132,241,198);
+    background: radial-gradient(circle, rgba(132,241,198,1) 0%, rgba(131,240,240,1) 91%);
+    height: 130px;
+    box-shadow: 0px 3px 9px 4px rgba(0, 0, 0, 0.86);
+    padding:30px;
+}
+#logo{
+    width: 100px;
+}
+li{
+    text-transform: uppercase;
+}
+li ul:hover{
+    display:block
+}
+a{
+    color: #000;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight: 500;
+}
+a:hover{
+    color: #41d5d7
+}
+li ul{
+    list-style-type: none;
+    position: absolute;
+    background-color: rgba(41, 35, 35, 0.774);
+    padding: 20px;
+    border-radius: 5%;
+    display:none;
+    animation: subMenuAnimacion 0.5s ease-in-out;
+}
+ul li:hover ul{
+    display:block
+}
+
+li ul li a{
+    text-decoration: none;
+    color:#fff;
+}
+li ul li a:hover{
+    color:#41d5d7;
+}
+
+@keyframes subMenuAnimacion {
+    from{
+        margin-top: 10px;
+        opacity: 0;
+    }
+    to{
+        margin-top: 0px;
+        opacity:1;
+    }
+}
