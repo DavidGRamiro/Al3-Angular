@@ -28,19 +28,19 @@ export class LoginComponent implements OnInit {
   ingresar(){
 
     console.log(this.form)
+    //Recogemos los datos del formulario y lo almacenamos en constantes
     const usuario = this.form.value.usuario;
     const password = this.form.value.password;
     
     if (usuario == 'felix' && password == 'edix'){
       //Redireccionamos a la página principal.
-      this.router.navigate(['inicio']); //Path de la ruta de nuestro componente inicio.
+      this.router.navigate(['inicio']); //Path de la ruta de inicio.component
     }else{
       //Borramos el formulario y mostramos el mensaje de error.
       this.form.reset();
       alert("Usuario o contraseña incorrectos");
     }
   }
-
   ngOnInit(): void{
   }
 }

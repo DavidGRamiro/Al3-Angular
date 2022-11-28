@@ -5,9 +5,13 @@
     </a>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <!-- Hacemos un bucle for para recorres los items que tenemos declarados en el Array navItems-->
         <li *ngFor=" let item of navItems"  class="nav-item">
+          <!-- Declaramos el path para cada item que gemos declarado accediendo a el a traves de item.name del item-->
           <a class="nav-link" [routerLink]="item.path">{{item.name}}</a>
+          <!-- Si hay subItems , los pintamos en una lista a traves de un bucle for-->
           <ul *ngIf="item.subItems">
+            <!-- Por cada subItems le añadimos el path asociado al nombre de cada uno-->
             <li *ngFor=" let item of item.subItems">
               <a class ="nav-link" [routerLink]="item.path">{{item.name}}</a>
             </li>
