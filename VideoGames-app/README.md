@@ -1,10 +1,12 @@
 # VideoGamesApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.0.
+Este proyecto ha sido realizado a través de la interfaz de la línea de comandos de Angular: [Angular CLI](https://github.com/angular/angular-cli) 
+utuilizando la version 15.0.0.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Ejecuta `ng serve` para desplegar la aplicación. Serás desplegado a la ruta `http://localhost:4200/`. En el caso de que modifiques los ficheros, 
+se mostrarán instantáneamente.
 
 ## Code scaffolding
 
