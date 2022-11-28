@@ -1,6 +1,8 @@
 <div class="container">
     <div class="row" style="margin-top:20px">
         <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+            <!-- Llamamos al módulo FormGoup y lo igualamos a la variable que tenemos declarada en login.componet.ts que recogerá los datos ingresados. 
+            Una vez pulsemos el botón de "Iniciar sesión" llamamos al método ingresar()-->
             <form [formGroup]="form" (ngSubmit)="ingresar()">
                 <fieldset>
                     <h2>Inicia sesión</h2>
@@ -14,6 +16,7 @@
                     <hr class="colorgraph">
                     <div class="row">
                         <div class="col-xs-6 col-sm-6 col-md-6">
+                            <!-- El boton de iniciar sesión estara deshabilitado hasta que el formulario no este relleno con datos-->
                             <button class="btn btn-success" type = "submit" [disabled]="form.invalid">Iniciar sesión</button>
                         </div>
                     </div>
