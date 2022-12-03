@@ -11,10 +11,13 @@
     </thead>
     <tbody>
       <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>{{ juego.getId() }}</td>
+        <td>{{ juego.getNombre() }}</td>
+        <td>{{ juego.getDescripcion() }}</td>
+        <td>{{ juego.getCreador() }}</td>
       </tr>
     </tbody>
+
+    <br>
+    <input type="button" class="btn btn-primary" value="Volver a Inicio" routerLink="/inicio">
   </table>
