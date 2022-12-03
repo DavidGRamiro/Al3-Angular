@@ -1,23 +1,34 @@
 <h1>Detalle de Juego</h1>
 
-<table class="table">
-    <thead>
-      <tr>
-        <th scope="col">Id</th>
-        <th scope="col">Nombre</th>
-        <th scope="col">Descripción</th>
-        <th scope="col">creador</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>{{ juego.getId() }}</td>
-        <td>{{ juego.getNombre() }}</td>
-        <td>{{ juego.getDescripcion() }}</td>
-        <td>{{ juego.getCreador() }}</td>
-      </tr>
-    </tbody>
+<div class="fichaJuego">
+
+    
+    <img  src="{{ juego.getImage() }}" height="300px">
+    
+
+    <table class="table">
+      
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Compañía</th>
+            <th scope="col">Valoración</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{ juego.getId() }}</td>
+            <td>{{ juego.getNombre() }}</td>
+            <td>{{ juego.getCompany() }}</td>
+            <td>{{ juego.getValoracion() }}</td>
+            
+          </tr>
+        </tbody>
+      </table>
+  </div>
+
 
     <br>
     <input type="button" class="btn btn-primary" value="Volver a Inicio" routerLink="/inicio">
-  </table>
+  

@@ -10,6 +10,7 @@ import { LoginComponent } from './components/login/login.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { DetalleComponent } from './detalle/detalle.component';
 import { ListadoComponent } from './listado/listado.component';
+import { UsuarioComponent } from './usuario/usuario.component';
 
 
 
@@ -21,7 +22,8 @@ import { ListadoComponent } from './listado/listado.component';
     LoginComponent,
     InicioComponent,
     DetalleComponent,
-    ListadoComponent
+    ListadoComponent,
+    UsuarioComponent
   ],
   imports: [
     BrowserModule,

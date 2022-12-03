@@ -18,13 +18,13 @@ export class DetalleComponent {
     this._idJuego = route.snapshot.params["id"];
     console.log(this._idJuego);
 
-    let listaJuegos: { id: string, nombre: string, descripcion: string, creador: string }[] = [
-      { "id": "MNC", "nombre": "Minecraft", "descripcion": "Juego guay", "creador": "Markus Persson" },
-      { "id": "GTA", "nombre": "Grand Theft Auto", "descripcion": "Juego guay", "creador": "Markus Persson" },
-      { "id": "LOL", "nombre": "League of Legends", "descripcion": "Juego guay", "creador": "Markus Persson" },
-      { "id": "COD", "nombre": "Call of Duty", "descripcion": "Juego guay", "creador": "Markus Persson" },
-      { "id": "WOW", "nombre": "War of Warcraft", "descripcion": "Juego guay", "creador": "Markus Persson" },
-      { "id": "LOU", "nombre": "The Last of Us", "descripcion": "Juego guay", "creador": "Markus Persson" }
+    let listaJuegos: { id: string, nombre: string, company: string, valoracion: string, image: string }[] = [
+      { "id": "MNC", "nombre": "Minecraft", "company": "Mojang Studios", "valoracion": "4.5", "image": "../assets/Pictures/MNC.jpg" },
+      { "id": "GTA", "nombre": "Grand Theft Auto", "company": "DMA Design", "valoracion": "3.7", "image": "/assets/Pictures/GTA.jpg" },
+      { "id": "LOL", "nombre": "League of Legends", "company": "Riot Games", "valoracion": "3.6", "image": "/assets/Pictures/LOL.jpg" },
+      { "id": "COD", "nombre": "Call of Duty", "company": "Infinity Ward Games", "valoracion": "2.4", "image": "/assets/Pictures/COD.jpg" },
+      { "id": "WOW", "nombre": "War of Warcraft", "company": "Blizzard Entertainment", "valoracion": "3.7", "image": "/assets/Pictures/WOW.jpg" },
+      { "id": "LOU", "nombre": "The Last of Us", "company": "Naughty Dog", "valoracion": "4.5", "image": "/assets/Pictures/LOU.jpg" }
       
     ];
 
@@ -32,17 +32,14 @@ export class DetalleComponent {
        if ((listaJuegos[i].id) === this._idJuego){
         this.juego.setId(listaJuegos[i].id);
         this.juego.setNombre(listaJuegos[i].nombre);
-        this.juego.setDescripcion(listaJuegos[i].descripcion);
-        this.juego.setCreador(listaJuegos[i].creador);
+        this.juego.setCompany(listaJuegos[i].company);
+        this.juego.setValoracion(listaJuegos[i].valoracion);
+        this.juego.setImage(listaJuegos[i].image);
        };
       }
     }
 
-  // public juego = new Juego();
-  // juego1: Juego = new Juego("MNC", "Minecraft", "Juego guay", "Markus Persson");
-  // juego2: Juego = new Juego("WOW", "War of Warcraft", "Juego guay", "Markus Persson");
-  //listaJuegos: Array<Juego> = [this.juego1 , this.juego2];
-  // let listaJuegos1: { juego: Juego }[];
+
 
 
   

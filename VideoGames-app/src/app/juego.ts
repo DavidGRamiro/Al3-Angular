@@ -1,9 +1,9 @@
 export class Juego {
     private _id: string = "";
     private _nombre: string = "";
-    private _descripcion: string = "";
-    private _creador: string = "";
-  
+    private _company: string = "";
+    private _valoracion: string = "";
+    private _image: string = "";
 
     public getId(): string {
         return this._id;
@@ -19,25 +19,28 @@ export class Juego {
         this._nombre = value;
     }
   
-    public getDescripcion(): string {
-        return this._descripcion;
+    public getCompany(): string {
+        return this._company;
     }
-    public setDescripcion(value: string) {
-        this._descripcion = value;
+    public setCompany(value: string) {
+        this._company = value;
     }
 
-    public getCreador(): string {
-        return this._creador;
+    public getValoracion(): string {
+        return this._valoracion;
     }
-    public setCreador(value: string) {
-        this._creador = value;
+    public setValoracion(value: string) {
+        this._valoracion = value;
     }
     
-    constructor(id?: string, nombre?: string, descripcion?: string, creador?: string){
-    //   this._id = id;
-    //   this._nombre = nombre;
-    //   this._descripcion = descripcion;
-    //   this._creador = creador;
+    public getImage(): string {
+        return this._image;
+    }
+    public setImage(value: string) {
+        this._image = value;
+    }
+
+    constructor(_id?: string, _nombre?: string, _company?: string, _valoracion?: string, _image?: string){
     }
 
  

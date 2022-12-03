@@ -1,1 +1,10 @@
 *{margin: 1%;}
+
+fichaJuego{
+    margin-left: 40%;
+    display:flex;
+    flex-direction: row;
+}
+
+
+
