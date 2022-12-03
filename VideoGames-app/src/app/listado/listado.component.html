@@ -1,0 +1,23 @@
+<h1>Listado de Juegos</h1>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Título</th>
+        <th scope="col">Valoración Media</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let element of listaJuegos">
+        <!-- <th scope="row">1</th> -->
+        <td>{{element.id}}</td>
+        <td>{{element.nombre}}</td>
+        <td>{{element.valoracion}}</td>
+        <td>
+            <input type="button" class="btn btn-primary" value="Detalle" routerLink="{{element.route}}">
+        </td>
+      </tr>
+    </tbody>
+  </table>
