@@ -1,7 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-const routes: Routes = [];
 import { AppComponent } from './app.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { LoginComponent } from './components/login/login.component';
@@ -15,12 +13,12 @@ const routes: Routes = [
   { path:'', component: LoginComponent },
   { path: 'inicio', component: InicioComponent },
   { path: 'inicio/detalle/:id', component: DetalleComponent },
-  {path:'QuienesSomos', component: QuienesSomosComponent},
-  {path:'QuienesSomos/detalle/:id', component: DetalleComponent},
-  {path:'Home', component: InicioComponent},
-  {path:'Home/detalle/:id', component: DetalleComponent},
-  {path:'Juegos',component:ListadoComponent},
-  {path:'Juegos/detalle/:id',component:DetalleComponent}  
+  { path:'QuienesSomos', component: QuienesSomosComponent},
+  { path:'QuienesSomos/detalle/:id', component: DetalleComponent},
+  { path:'Home', component: InicioComponent},
+  { path:'Home/detalle/:id', component: DetalleComponent},
+  { path:'Juegos',component:ListadoComponent},
+  { path:'Juegos/detalle/:id',component:DetalleComponent}  
 ];
 
 @NgModule({
