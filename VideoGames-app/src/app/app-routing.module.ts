@@ -4,21 +4,22 @@ import { AppComponent } from './app.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { LoginComponent } from './components/login/login.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { DetalleComponent } from './detalle/detalle.component';
+import { DetalleComponent } from './components/detalle/detalle.component';
 import { QuienesSomosComponent } from './components/quienes-somos/quienes-somos.component';
-import { ListadoComponent } from './listado/listado.component';
+import { ListadoComponent } from './components/listado/listado.component';
+
 
 const routes: Routes = [
   
   { path:'', component: LoginComponent },
   { path: 'inicio', component: InicioComponent },
-  { path: 'inicio/detalle/:id', component: DetalleComponent },
+  { path: 'inicio/detalle/:id', component: DetalleComponent },  
   { path:'QuienesSomos', component: QuienesSomosComponent},
   { path:'QuienesSomos/detalle/:id', component: DetalleComponent},
   { path:'Home', component: InicioComponent},
   { path:'Home/detalle/:id', component: DetalleComponent},
   { path:'Juegos',component:ListadoComponent},
-  { path:'Juegos/detalle/:id',component:DetalleComponent}  
+  { path:'Juegos/detalle/:id',component:DetalleComponent}
 ];
 
 @NgModule({

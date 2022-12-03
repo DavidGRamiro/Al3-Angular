@@ -8,7 +8,7 @@ import { LoginComponent } from './components/login/login.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { DetalleComponent } from './components/detalle/detalle.component';
 import { ListadoComponent } from './components/listado/listado.component';
-import { UsuarioComponent } from './usuario/usuario.component';
+import { UsuarioComponent } from './components/usuario/usuario.component';
 import { QuienesSomosComponent } from './components/quienes-somos/quienes-somos.component';
 
 @NgModule({
