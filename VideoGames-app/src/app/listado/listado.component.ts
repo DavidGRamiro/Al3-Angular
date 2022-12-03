@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-listado',
   templateUrl: './listado.component.html',
   styleUrls: ['./listado.component.css']
 })
-export class ListadoComponent {
+export class ListadoComponent implements OnInit {
   private _listaJuegos: { id: string; nombre: string; valoracion: string; route: string; }[] | undefined;
   
   constructor(){
@@ -26,5 +26,6 @@ export class ListadoComponent {
   public set listaJuegos(value: { id: string; nombre: string; valoracion: string; route: string; }[] | undefined) {
     this._listaJuegos = value;
   }
-
+  ngOnInit(): void{
+  }
 }

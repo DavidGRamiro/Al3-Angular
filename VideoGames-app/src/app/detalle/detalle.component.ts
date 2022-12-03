@@ -2,7 +2,7 @@ import { ThisReceiver } from '@angular/compiler';
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { __importStar } from 'tslib';
-import { Juego } from '../juego';
+import { Juego } from '../../juego';
 
 
 @Component({
