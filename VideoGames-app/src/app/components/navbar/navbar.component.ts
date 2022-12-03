@@ -17,24 +17,32 @@ export class NavbarComponent implements OnInit{
       name: 'Quienes somos'
     },
     {
-      path: '/Categorias',
-      name: 'Categorias',
+      path: '/Juegos',
+      name: 'Juegos',
       subItems:[
         {
-          path:'/',
-          name: 'Acción'
+          path:'detalle/MNC',
+          name: 'Minecraft'
         },
         {
-          path:'/',
-          name: 'Aventura'
+          path:'detalle/GTA',
+          name: 'Grand Theft Auto'
         },
         {
-          path:'/',
-          name: 'Carreras'
+          path:'detalle/LOL',
+          name: 'League of Legends'
         },
         {
-          path:'/',
-          name: 'Shooters'
+          path:'detalle/COD',
+          name: 'Call Of Duty'
+        },
+        {
+          path:'detalle/WOW',
+          name: 'World of Warcraft'
+        },
+        {
+          path:'detalle/LOU',
+          name: 'The Last of Us'
         }
       ]
     },

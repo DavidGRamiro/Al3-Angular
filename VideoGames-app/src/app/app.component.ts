@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'VideoGames-app';
+  title :string = 'InfoGames';
+  description :string = 'La mejor web de información sobre las últimas tendencias gaming ';
 }
