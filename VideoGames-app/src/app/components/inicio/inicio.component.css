@@ -1,0 +1,23 @@
+h1{
+    margin-left:1%;
+    float:center;
+}
+.container{
+width: fit-content;    
+display:relative;
+margin-left: 5%;
+margin-right: 10%;
+border-radius:10px;
+border:darkgrey 2px solid;
+float: left;
+
+}
+.container :hover{
+    color: #000;
+}
+
+.secundario{
+    margin-top:1%;
+    float:top right;
+    margin-left: 5%;
+}
