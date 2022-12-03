@@ -21,27 +21,27 @@ export class NavbarComponent implements OnInit{
       name: 'Juegos',
       subItems:[
         {
-          path:'/MNC',
+          path:'detalle/MNC',
           name: 'Minecraft'
         },
         {
-          path:'/GTA',
+          path:'detalle/GTA',
           name: 'Grand Theft Auto'
         },
         {
-          path:'/LOL',
+          path:'detalle/LOL',
           name: 'League of Legends'
         },
         {
-          path:'/COD',
+          path:'detalle/COD',
           name: 'Call Of Duty'
         },
         {
-          path:'/WOW',
+          path:'detalle/WOW',
           name: 'World of Warcraft'
         },
         {
-          path:'/LOU',
+          path:'detalle/LOU',
           name: 'The Last of Us'
         }
       ]
