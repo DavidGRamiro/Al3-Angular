@@ -12,7 +12,7 @@ export class LoginComponent implements OnInit {
 
   //Variable asiganada al objeto que maneja nuestro formulario.
   form: FormGroup;
-  
+
   //Importamos 2 modulos en nuestro constructor.
   // -> FormBuilder - Clase de AngularForms que nos ayuda a crear nuestro formulario
   // -> Router - Módulo para redirigir a la página de inicio una vez logueados.
@@ -31,10 +31,10 @@ export class LoginComponent implements OnInit {
     //Recogemos los datos del formulario y lo almacenamos en constantes
     const usuario = this.form.value.usuario;
     const password = this.form.value.password;
-    
+
     if (usuario == 'felix' && password == 'edix'){
-      //Redireccionamos a la página principal.
-      this.router.navigate(['inicio']); //Path de la ruta de inicio.component
+      //Redireccionamos a la página principal. Pasando por parámetro el nombre de usuario
+      this.router.navigate(['inicio',{nombreUsuario: usuario}]); //Path de la ruta de inicio.component
     }else{
       //Borramos el formulario y mostramos el mensaje de error.
       this.form.reset();
