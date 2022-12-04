@@ -11,6 +11,8 @@ import { InicioComponent } from './components/inicio/inicio.component';
 import { DetalleComponent } from './detalle/detalle.component';
 import { ListadoComponent } from './listado/listado.component';
 import { UsuarioComponent } from './usuario/usuario.component';
+import { ContactoComponent } from './contacto/contacto.component';
+import { SobreNosotrosComponent } from './sobre-nosotros/sobre-nosotros.component';
 
 
 
@@ -23,7 +25,10 @@ import { UsuarioComponent } from './usuario/usuario.component';
     InicioComponent,
     DetalleComponent,
     ListadoComponent,
-    UsuarioComponent
+    UsuarioComponent,
+    ContactoComponent,
+    SobreNosotrosComponent
+
   ],
   imports: [
     BrowserModule,
