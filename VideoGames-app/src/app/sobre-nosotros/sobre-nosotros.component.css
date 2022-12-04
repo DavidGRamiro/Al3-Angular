@@ -1,0 +1,13 @@
+.imagen{
+    width: auto;
+    margin: 4% ;
+}
+
+img{
+    border-radius: 5%;
+}
+
+.text-class{
+    display: flex;
+    flex-direction: row;
+}

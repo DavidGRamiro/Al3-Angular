@@ -9,15 +9,15 @@ export class NavbarComponent implements OnInit{
 
   navItems = [
     {
-      path: '/Home',
+      path: '/inicio',
       name: 'Home'
     },
     {
-      path: '/QuienesSomos',
-      name: 'Quienes somos'
+      path: '/contacto',
+      name: 'Contacto'
     },
     {
-      path: '/Juegos',
+      path: '/detalle',
       name: 'Juegos',
       subItems:[
         {
@@ -46,6 +46,10 @@ export class NavbarComponent implements OnInit{
         }
       ]
     },
+    {
+      path: '/sobre-nosotros',
+      name: 'Sobre Nosotros'
+    }
   ]
 
   constructor(){
