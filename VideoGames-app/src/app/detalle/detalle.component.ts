@@ -28,21 +28,27 @@ export class DetalleComponent {
       
     ];
 
-    for(let i=0; i<listaJuegos.length; i++){
-       if ((listaJuegos[i].id) === this._idJuego){
-        this.juego.setId(listaJuegos[i].id);
-        this.juego.setNombre(listaJuegos[i].nombre);
-        this.juego.setCompany(listaJuegos[i].company);
-        this.juego.setValoracion(listaJuegos[i].valoracion);
-        this.juego.setImage(listaJuegos[i].image);
-       };
-      }
+    // for(let i=0; i<listaJuegos.length; i++){
+    //    if ((listaJuegos[i].id) === this._idJuego){
+    //     this.juego.setId(listaJuegos[i].id);
+    //     this.juego.setNombre(listaJuegos[i].nombre);
+    //     this.juego.setCompany(listaJuegos[i].company);
+    //     this.juego.setValoracion(listaJuegos[i].valoracion);
+    //     this.juego.setImage(listaJuegos[i].image);
+    //    };
+    //   }
+
+    listaJuegos.forEach((element) => {
+        if ((element.id) === this._idJuego){
+          this.juego.setId(element.id);
+          this.juego.setNombre(element.nombre);
+          this.juego.setCompany(element.company);
+          this.juego.setValoracion(element.valoracion);
+          this.juego.setImage(element.image);
+         };
+});
+
     }
-
-
-
-
-  
 } 
   
 
