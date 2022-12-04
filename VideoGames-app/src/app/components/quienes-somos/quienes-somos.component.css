@@ -1,11 +1,42 @@
 *{
     margin:auto;
-    margin-top: 50px;
+   margin-bottom: 50PX;
+
+}
+h1{
+    width: fit-content;
 }
 
-
+#titulo2{
+    
+    width: auto;
+}
+#parrafo{
+    position: relative;
+    width: auto;
+    width: fit-content;
+}
 
 #logo{
-    float:top right;
+   position:relative ;
+    float:  right;
     height: 300px;
+    
+}
+#texto{
+    position:relatiVE;
+    margin: 0;
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 5%;
+}
+#formulario{
+    margin-top: 50px;
+    width: fit-content;
+    position: relative;
+    margin-left: 5%;
+
+}
+#formulario div{
+    margin-top: 25px;
 }

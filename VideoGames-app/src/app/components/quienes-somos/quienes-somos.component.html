@@ -1,7 +1,36 @@
 <app-navbar></app-navbar>
-<div>
+
     <h1 id="empresa">INFO GAMES</h1>
-    <div>nos dedicamos a hacer de reviews de todos los titulos nuevos que salen al mercado</div>
+   <div id="texto">
+    <h2 id="titulo2">Somos una empresa lider en el sector</h2>
+    <div id="parrafo">
+
+        Nos dedicamos a hacer de reviews de todos los titulos nuevos que salen al mercado.<br>
+         Nuestro objetivo es dar al consumidor la información más honesta del mundo gaming. 
+    </div>
+    </div>
     <img src ="/assets/Pictures/InfoGames.png" id="logo">
-    <DIV>somos una empresa lider en el sector</DIV><br>
-</div>
+    
+    <div id="formulario">
+        
+        <form [formGroup]="form" (ngSubmit)="aceptar()">
+            <fieldset>
+                <h2>Quiere contactar con nosotros</h2>
+                <div class="form-group">
+                    <input type="text" name="nombre" autocomplete="off"  placeholder="Nombre" class="form-control input-lg"  formControlName="nombre">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="correoelectronico" autocomplete="off" placeholder="Correo electronico" class="form-control input-lg"  formControlName="correoelectronico">
+                </div>
+                <div class="form-group">
+                    <input type="phone" name="telefono" autocomplete="off" placeholder="Telefono"  class="form-control input-lg"  formControlName="telefono">
+                </div>               
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6">
+                        <button class="btn btn-success" type = "submit">enviar datos</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
